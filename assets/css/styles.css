@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+.header-color{
+    color: orange;
+}
+.nav-link{
+    cursor: pointer;
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: orange;
+    transition: width 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+.active::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    /* background-color: var(--c-title-underline-color); */
+    background: rgb(255, 123, 0);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    
+  }
+
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.parallax-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.parallax-caption p {
+    font-size: 1.2rem;
+}
+
+.parallax-1 {
+    background-image: url('https://picsum.photos/id/1015/1200/800');
+}
+
+.parallax-2 {
+    background-image: url('https://picsum.photos/id/1019/1200/800');
+}
+
+.parallax-3 {
+    background-image: url('https://picsum.photos/id/1025/1200/800');
+}
+.parallax-section {
+    height: 100vh;
+    background-image: url('https://www.online-station.net/wp-content/uploads/2025/04/Thumb-10.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+section{
+    div{
+        h1{
+            text-shadow: 0 0 10px rgb(238, 195, 3), 0 0 3px #6e5a00;
+        }
+    }
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon-hover-group {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.75rem;
+  }
+  
+  .icon-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #f0f4f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-circle i {
+    color: #0d6efd;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover เฉพาะเมื่อเมาส์ชี้ที่ icon หรือข้อความ */
+  .icon-hover-group:hover .icon-circle {
+    background-color: #0d6efd;
+  }
+  
+  .icon-hover-group:hover .icon-circle i {
+    color: white;
+  }
+  
+  
+  .icon-hover-group a {
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-hover-group a:hover {
+    color: orange;
+  }
+  
+  
